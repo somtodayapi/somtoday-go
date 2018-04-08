@@ -1,5 +1,12 @@
 package somtoday
 
+// An Organisation is an organisation (from "https://servers.somtoday.nl/organisaties.json")
+type Organisation struct {
+	Naam   string `json:"naam"`
+	Plaats string `json:"plaats"`
+	UUID   string `json:"uuid"`
+}
+
 // AuthResponse is the response Authorization routes return (from "productie.somtoday.nl/oauth2/token")
 type AuthResponse struct {
 	AccessToken    string `json:"access_token"`
