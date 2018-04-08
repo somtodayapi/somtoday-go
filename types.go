@@ -1,5 +1,10 @@
 package somtoday
 
+// OrganisationResponse is how the server returns organisations
+type OrganisationResponse struct {
+	Instellingen []Organisation `json:"instellingen"`
+}
+
 // An Organisation is an organisation (from "https://servers.somtoday.nl/organisaties.json")
 type Organisation struct {
 	Naam   string `json:"naam"`
