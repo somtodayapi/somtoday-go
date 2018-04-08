@@ -7,7 +7,7 @@ type Organisation struct {
 	UUID   string `json:"uuid"`
 }
 
-// AuthResponse is the response Authorization routes return (from "productie.somtoday.nl/oauth2/token")
+// AuthResponse is the response Authorization routes return (from "https://productie.somtoday.nl/oauth2/token")
 type AuthResponse struct {
 	AccessToken    string `json:"access_token"`
 	RefreshToken   string `json:"refresh_token"`
