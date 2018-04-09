@@ -33,3 +33,16 @@ func GetOrganisations() ([]Organisation, error) {
 
 	return response[0].Instellingen, err
 }
+
+// GetOrganisation Get an organisation from SOMtoday by name
+func GetOrganisation(name string) (org Organisation, err error) {
+	organisations, err := GetOrganisations()
+
+	for _, organisation := range organisations {
+		if organisation.Naam == name {
+			org = organisation
+			break
+		}
+	}
+	return
+}
