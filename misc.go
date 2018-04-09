@@ -6,6 +6,12 @@ import (
 	"net/http"
 )
 
+// AppID is the ID somtoday uses to verify it's the app making reqs
+const AppID = "D50E0C06-32D1-4B41-A137-A9A850C892C2"
+
+// AppSecret is kinda the same as AppID
+const AppSecret = "vDdWdKwPNaPCyhCDhaCnNeydyLxSGNJX"
+
 // GetOrganisations returns a list of organisations
 func GetOrganisations() ([]Organisation, error) {
 	resp, err := http.Get("https://servers.somtoday.nl/organisaties.json")
